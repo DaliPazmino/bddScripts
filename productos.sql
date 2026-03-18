@@ -1,0 +1,12 @@
+
+--crea la tabla productos
+drop table cuentas
+
+create table productos(
+	codigo char(10) not null,
+	nombre varchar (50) not null,
+	descripcion varchar (200), 
+	precio money not null,
+	stock int not null,
+	constraint codigo_pk primary key(codigo)
+)
